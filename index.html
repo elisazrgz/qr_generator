@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Concert+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
     <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
 </head>
 <body>
     <h1>Generate your own QR code</h1>
     <div class="container">
-        <input type="text" id="input" placeholder="Enter your text here" />
+        <input type="text" id="input" placeholder="Enter your URL here" />
         <button class="btn-generate" onclick="generateQrCode()">Generate</button>
         <div class="code-container">
             <img id="qr-code" src="./qrplaceholder.svg" alt="QR code" />
         </div>
         <button class="btn-download" onclick="downloadQrCode()">Download code</button>
     </div>
+    <footer>
+        <p class="signature">2024 © elisazaragoza.dev</p>
+    </footer>
 </body>
 </html>
