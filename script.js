@@ -11,7 +11,7 @@ function generateQrCode(){
 
 function downloadQrCode(){
     const $qrCode = document.getElementById("qr-code").src;
-    if ($qrCode.includes("qrplaceholder.svg")){
+    if ($qrCode.includes("qrplaceholder.png")){
         alert("Please generate a QR code first");
     } else {
         const $downloadLink = document.createElement("a");
